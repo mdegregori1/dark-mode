@@ -1,8 +1,8 @@
 import { useLocalStorage } from "./useLocalStorage";
 
-export const useDarkMode = (value) => {
-    const [darkMode, setDarkMode] = useLocalStorage(darkMode, value);
-    if (darkMode === false){
+export const useDarkMode = (initialValue) => {
+    const [darkMode, setDarkMode] = useLocalStorage(initialValue);
+    if (darkMode === true){
         document.body.classList.add('dark-mode');
     }
     else {
@@ -11,8 +11,4 @@ export const useDarkMode = (value) => {
 
 
     return [darkMode, setDarkMode];
-    //review here
-
 }
-
-
