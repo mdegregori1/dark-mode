@@ -4,7 +4,7 @@ import Chart from "./Chart";
 import styled from 'styled-components';
 
 const Charts = ({ coinData }) => {
-  console.log('fuck', coinData)
+  console.log(, coinData)
   return (
     <div className="charts">
       {coinData.map(coin => (
